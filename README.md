@@ -109,6 +109,30 @@ mcp-sequential-thinking/
 
 ---
 
+## 🖥️ Super Dashboard (Mind Map Visualizer)
+
+This repository also includes a **Next.js Super Dashboard** for real-time visualization of the AI's "Tree of Thoughts". It provides a cyberpunk-themed, interactive Mind Map that renders nodes and semantic memories directly from the LanceDB vector store.
+
+### How to Run the Dashboard
+
+The dashboard uses a hybrid architecture to bypass Node.js native binding limitations during Next.js builds on some platforms.
+
+1. **Start the API Sidecar (from the root folder):**
+   ```bash
+   node api-server.cjs
+   ```
+   *This runs an Express server on port 3001 that reads the LanceDB data.*
+
+2. **Start the Next.js Frontend:**
+   Open a new terminal tab and run:
+   ```bash
+   cd mcp-dashboard
+   npm run dev
+   ```
+   *This starts the visual interface on [http://localhost:3000](http://localhost:3000).*
+
+---
+
 ## 🧪 Testing with MCP Inspector
 
 You can test the server and its tools visually using the official MCP Inspector:
