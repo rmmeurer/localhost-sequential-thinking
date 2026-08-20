@@ -1,0 +1,30 @@
+{
+  "name": "@meugestor/mcp-sequential-thinking",
+  "version": "1.0.0",
+  "description": "Localhost Sequential Thinking — MCP server with persistent vector memory via LanceDB",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "localhost-sequential-thinking": "./dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@lancedb/lancedb": "^0.17.0",
+    "@huggingface/transformers": "^3.5.1",
+    "zod": "^3.24.0",
+    "chalk": "^5.4.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
